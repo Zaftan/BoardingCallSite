@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,900');
+.middle {
+  margin: 0 auto;
+}
 
 * {
   -webkit-font-smoothing: antialiased;
@@ -190,3 +193,8 @@ a {
 
 }
 /*** END : MOBILE ***/
+
+.placeholder {
+  background-image: url(assets/placeholder.jpg);
+  background-repeat: no-repeat;
+}
