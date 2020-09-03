@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,900');
 
-.middle {
-  margin: 0 auto;
-}
-
 * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -24,7 +20,9 @@ a {
   color: #000000;
 }
 
+
 /* header */
+
 .header {
   background-color: #fff;
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,.2);
@@ -167,19 +165,34 @@ a {
 }
 
 .box {
-  max-width: 960px;
   margin: 0 auto;
+  padding-left: 70px;
   min-height: 800px;
   display: grid;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
+}
+
+.card {
+  max-width: 960px;
+  padding: 40px;
+  max-height: 600px;
+  display: grid;
 }
 
 .box h1 {
   font-size: 3em;
-  color: white;
+  color: #000000;
 }
 
+.placeholder {
+  background-image: url("assets/Pictures/placeholder.png");
+  object-fit: cover;
+}
+
+.transparentCard {
+  background-color: rgba(160, 152, 152, 0.64);
+}
 
 /*** START : TABLET ***/
 @media screen and (max-width: 768px){
@@ -194,13 +207,3 @@ a {
 
 }
 /*** END : MOBILE ***/
-
-.placeholder {
-  background-image: url(assets/placeholder.jpg);
-  background-repeat: no-repeat;
-}
-
-.placeholder {
-  background-image: url(assets/placeholder.jpg);
-  background-repeat: no-repeat;
-}
