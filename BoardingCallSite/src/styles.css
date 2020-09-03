@@ -1,8 +1,15 @@
+<<<<<<< Updated upstream
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,900');
 .middle {
   margin: 0 auto;
 }
+=======
+>>>>>>> Stashed changes
+.middle {
+  margin: 0 auto;
+}
 
+<<<<<<< Updated upstream
 * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -194,6 +201,13 @@ a {
 }
 /*** END : MOBILE ***/
 
+.placeholder {
+  background-image: url(assets/placeholder.jpg);
+  background-repeat: no-repeat;
+}
+
+=======
+>>>>>>> Stashed changes
 .placeholder {
   background-image: url(assets/placeholder.jpg);
   background-repeat: no-repeat;
