@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { LandingComponent } from './landing/landing.component';
+import { DamageCalcComponent } from './damage-calc/damage-calc.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AboutUsComponent,
-    LandingComponent
+    LandingComponent,
+    DamageCalcComponent
   ],
   imports: [
     BrowserModule,
@@ -19,4 +21,9 @@ import { LandingComponent } from './landing/landing.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+
+  constructor() {
+  }
+
+}
