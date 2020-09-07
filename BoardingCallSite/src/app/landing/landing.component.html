@@ -1,5 +1,5 @@
 <main class="main">
-  <div class="box placeholder">
+  <div class="box">
     <div class="card transparentCard">
       <h1>Welcome to <b>Big Bug Warfare</b></h1>
       <p>
@@ -12,18 +12,19 @@
       </p>
     </div>
   </div>
-  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-
-    <div class="carousel-inner" role="listbox">
-        <img src="{{ getSlide() }}" alt="slide" >
+  <div class="box">
+  <div class="card transparentCard">
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner verticalCenter" role="listbox" width="100vw" height="100vh">
+        <i (click)='getPrev()' class="fas fa-angle-left arrowlign"></i>
+          <img src="{{ getSlide() }}" alt="{{ slideAlt() }}">
+        <i (click)='getNext()' class="fas fa-angle-right arrowlign"></i>
+      </div>
+      <div>
+        <h1>{{ slideClan() }}</h1>
+        <p>{{ slideInfo() }}</p>
+      </div>
     </div>
-    <div>
-      <p>{{ slideInfo() }}</p>
-    </div>
-
-   <button (click)='getPrev()'>Prev</button>
-
-   <button (click)='getNext()'>Next</button>
-
+  </div>
   </div>
 </main>

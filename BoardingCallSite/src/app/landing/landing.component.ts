@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
   ]
 })
 export class LandingComponent implements OnInit {
-  slides: string [] = ['/src/assets/placeholder.jpg', '/src/assets/Pictures/839px-Ubisoft_logo.png', './assets/Knot_Slide_3.jpg'];
-  info: string [] = ['uno', 'dos', 'tre', 'quatre'];
+  slides: string [] = ['../../assets/placeholder.jpg', '../../assets/placeholder.jpg', '../../assets/placeholder.jpg', '../../assets/placeholder.jpg'];
+  clans: string [] = ['The Ants', 'The Spiders', 'The Praying Mantis', 'The Mosquitos'];
+  info: string [] = ['uno', 'dos', 'tre', 'quatre', 'cinq'];
+  alt: string [] = ['uno', 'dos', 'tre', 'quatre'];
   i = 0;
+  minSlides = 0;
   maxSlides = 3;
 
   constructor() { }
@@ -23,7 +26,14 @@ export class LandingComponent implements OnInit {
 
   getPrev(): void
   {
-    this.i = this.i === 0 ? 0 : this.i - 1;
+    if(this.i >= this.minSlides)
+    {
+      this.i = this.i === 0 ? 0 : this.i - 1;
+    }
+    else
+    {
+      this.i = this.maxSlides;
+    }
   }
 
   getNext(): void
@@ -34,6 +44,16 @@ export class LandingComponent implements OnInit {
   slideInfo(): string
   {
     return this.info[this.i];
+  }
+
+  slideClan(): string
+  {
+    return this.clans[this.i];
+  }
+
+  slideAlt(): string
+  {
+    return this.alt[this.i];
   }
 
 }
