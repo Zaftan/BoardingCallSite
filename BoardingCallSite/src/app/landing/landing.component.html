@@ -1,0 +1,30 @@
+<main class="main">
+  <div class="box">
+    <div class="card transparentCard">
+      <h1>Welcome to <b>Big Bug Warfare</b></h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br />
+        Nullam hendrerit ultricies nisl, eget efficitur ipsum congue nec.<br />
+        Vestibulum eu ipsum non nunc sodales vestibulum.<br />
+        Pellentesque pulvinar bibendum diam ut pharetra.<br />
+        Nulla mattis, risus et placerat scelerisque.<br />
+        Donec vulputate sagittis risus sed ultrices.
+      </p>
+    </div>
+  </div>
+  <div class="box">
+  <div class="card transparentCard">
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner verticalCenter" role="listbox" width="100vw" height="100vh">
+        <i (click)='getPrev()' class="fas fa-angle-left arrowlign"></i>
+          <img src="{{ getSlide() }}" alt="{{ slideAlt() }}">
+        <i (click)='getNext()' class="fas fa-angle-right arrowlign"></i>
+      </div>
+      <div>
+        <h1>{{ slideClan() }}</h1>
+        <p>{{ slideInfo() }}</p>
+      </div>
+    </div>
+  </div>
+  </div>
+</main>
