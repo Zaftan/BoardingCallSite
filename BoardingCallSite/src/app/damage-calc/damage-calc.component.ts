@@ -81,6 +81,7 @@ export class DamageCalcComponent implements OnInit {
 
   damageCalc(data)
   {
+    this.basedamage = 0;
     this.weapons = data.weaponbugs;
     this.distance = data.distance;
     let weatherboost = this.damage(this.forecast);
@@ -93,22 +94,22 @@ export class DamageCalcComponent implements OnInit {
     if (forecast === 0)
     {
       //Sunny
-      return this.basedamage + 0;
+      return this.basedamage += 0;
     }
     else if (forecast === 1)
     {
       //Rainy
-      return this.basedamage + 0;
+      return this.basedamage += 0;
     }
     else if (forecast === 2)
     {
       //Stormy
-      return this.basedamage + 0;
+      return this.basedamage += 0;
     }
     else
     {
       //Foggy
-      return this.basedamage + 0;
+      return this.basedamage += 0;
     }
   }
 
@@ -116,10 +117,10 @@ export class DamageCalcComponent implements OnInit {
   {
     if (this.forecast === 2)
     {
-      let luckyshot = Math.floor(Math.random() * 100 + 1);
+      let luckyshot = Math.floor(Math.random() * 2 + 1);
       if (luckyshot === 1)
       {
-        this.basedamage + 1;
+        this.basedamage += 1;
       }
     }
     else
@@ -129,27 +130,27 @@ export class DamageCalcComponent implements OnInit {
     if (weapons === 1 && distance >= 1 || distance <= 3)
     {
       //Shotgun
-      return this.basedamage + 5;
+      return this.basedamage += 5;
     }
     else if (weapons === 2 && distance >= 3 || distance <= 6)
     {
       //Handgun
-      return this.basedamage + 2;
+      return this.basedamage += 2;
     }
     else if (weapons === 3 && distance >= 2 || distance <= 6)
     {
       //Bow
-      return this.basedamage + 3;
+      return this.basedamage += 3;
     }
     else if (weapons === 4 && distance >= 4 || distance <= 7)
     {
       //Sniper
-      return this.basedamage + 4;
+      return this.basedamage += 4;
     }
     else if (weapons === 5 && distance === 8)
     {
       //Katasect
-      return this.basedamage + 3;
+      return this.basedamage += 3;
     }
     else
     {
