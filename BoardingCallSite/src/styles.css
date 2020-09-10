@@ -25,6 +25,20 @@ p {
   font-size: 20px;
 }
 
+.button {
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  text-shadow: 0.5px 0.5px #222321;
+  padding: 50px;
+  border: none;
+  background-color: rgba(48, 150, 47, 0.83);
+}
+
+.button:hover{
+  background-color: rgb(48, 150, 47);
+}
+
 .arrowlign {
   top: 50%;
   margin: 0 auto;
@@ -403,6 +417,7 @@ p {
   }
 }
 /*** END : MOBILE ***/
+
 
 /*footer*/
 body{
