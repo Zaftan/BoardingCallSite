@@ -28,7 +28,7 @@ export class DamageCalcComponent implements OnInit {
   turnButton(): void
   {
     this.turn++;
-    this.forecast = Math.floor(Math.random() * Math.floor(3));
+    this.forecast = Math.floor(Math.random() * Math.floor(4));
     this.forecastImg(this.forecast);
     this.weathernames(this.forecast);
   }
@@ -115,46 +115,57 @@ export class DamageCalcComponent implements OnInit {
 
   weapon(weapons, distance)
   {
-    if (this.forecast === 2)
+    if (this.forecast === 3)
     {
-      let luckyshot = Math.floor(Math.random() * 2 + 1);
-      if (luckyshot === 1)
+      let miss = Math.floor(Math.random() * 100 + 1);
+      if (miss === 1 || 2 || 3)
       {
-        this.basedamage += 1;
+        return this.basedamage = 0;
       }
-    }
-    else
-    {
-      this.basedamage + 0;
-    }
-    if (weapons === 1 && distance >= 1 || distance <= 3)
-    {
-      //Shotgun
-      return this.basedamage += 5;
-    }
-    else if (weapons === 2 && distance >= 3 || distance <= 6)
-    {
-      //Handgun
-      return this.basedamage += 2;
-    }
-    else if (weapons === 3 && distance >= 2 || distance <= 6)
-    {
-      //Bow
-      return this.basedamage += 3;
-    }
-    else if (weapons === 4 && distance >= 4 || distance <= 7)
-    {
-      //Sniper
-      return this.basedamage += 4;
-    }
-    else if (weapons === 5 && distance === 8)
-    {
-      //Katasect
-      return this.basedamage += 3;
-    }
-    else
-    {
-      return this.basedamage;
+      else
+      {
+        if (this.forecast === 2)
+        {
+          let luckyshot = Math.floor(Math.random() * 100 + 1);
+          if (luckyshot === 1)
+          {
+            this.basedamage += 1;
+          }
+        }
+        else
+        {
+          this.basedamage + 0;
+        }
+        if (weapons === 1 && distance >= 1 || distance <= 3)
+        {
+          //Shotgun
+          return this.basedamage += 5;
+        }
+        else if (weapons === 2 && distance >= 3 || distance <= 6)
+        {
+          //Handgun
+          return this.basedamage += 2;
+        }
+        else if (weapons === 3 && distance >= 2 || distance <= 6)
+        {
+          //Bow
+          return this.basedamage += 3;
+        }
+        else if (weapons === 4 && distance >= 4 || distance <= 7)
+        {
+          //Sniper
+          return this.basedamage += 4;
+        }
+        else if (weapons === 5 && distance === 8)
+        {
+          //Katasect
+          return this.basedamage += 3;
+        }
+        else
+        {
+          return this.basedamage;
+        }
+      }
     }
   }
 }
