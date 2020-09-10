@@ -1,7 +1,7 @@
 <body>
 <main class="main">
   <div class="box aboutusbg" style="justify-content: left; padding-left: 25%;">
-    <div>
+    <div class="card transparentCard">
       <h1>Weather Forecast</h1>
       <img src="{{ weather }}" width="100px" height="100px"/>
       <h1>{{ weathername }}</h1>
@@ -10,6 +10,7 @@
       </p>
       <button class="calcButton" (click)="turnButton()">New Round</button>
     </div>
+    <div style="float: left" class="card transparentCard">
     <h1>Calculate Damage</h1>
     <form #dmgForm="ngForm" (ngSubmit)="damageCalc(dmgForm.value)">
       <select name="weaponbugs" id="weaponbugs" ngModel>
@@ -26,6 +27,7 @@
       <button class="calcButton" type="submit">Calculate Damage</button>
     </form>
     <p style="color: chartreuse;">Your damage output is {{ result }}</p>
+  </div>
   </div>
 </main>
 </body>
