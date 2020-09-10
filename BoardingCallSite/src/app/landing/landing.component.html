@@ -1,30 +1,84 @@
-<main class="main">
-  <div class="box">
-    <div class="card transparentCard">
-      <h1>Welcome to <b>Big Bug Warfare</b></h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br />
-        Nullam hendrerit ultricies nisl, eget efficitur ipsum congue nec.<br />
-        Vestibulum eu ipsum non nunc sodales vestibulum.<br />
-        Pellentesque pulvinar bibendum diam ut pharetra.<br />
-        Nulla mattis, risus et placerat scelerisque.<br />
-        Donec vulputate sagittis risus sed ultrices.
+<main class="main homebg">
+  <div class="box" style="min-height: 1300px;">
+    <div class="card transparentCard" >
+      <h1 style="font-size: 28px">Welcome to <b>Big Bug Warfare</b></h1>
+      <p style="font-size: 20px; stroke-width: 3; stroke: aqua">
+        The game where you fight over the control of New Bug City<br>
+        take control of new areas like the Antagon or Pims pool to unluck new troops<br>
+        use these different types of troops for example the Catasect or the Sharpsect<br>
+        but be aware of the weather,  if it storms you can be finished in a blink<br>
+        or when it's foggy it's harder to hit your shots.<br>
+        Strategies, attack, defeat and out smart your enemy to win the game!<br>
       </p>
     </div>
-  </div>
-  <div class="box">
-  <div class="card transparentCard">
+    <div class="card transparentCard">
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-      <div class="carousel-inner verticalCenter" role="listbox" width="100vw" height="100vh">
-        <i (click)='getPrev()' class="fas fa-angle-left arrowlign"></i>
-          <img src="{{ getSlide() }}" alt="{{ slideAlt() }}">
-        <i (click)='getNext()' class="fas fa-angle-right arrowlign"></i>
-      </div>
-      <div>
-        <h1>{{ slideClan() }}</h1>
-        <p>{{ slideInfo() }}</p>
+      <div class="slider">
+        <input type="radio" name="slider" title="slide1" checked="checked" class="slider__nav"/>
+        <input type="radio" name="slider" title="slide2" class="slider__nav"/>
+        <input type="radio" name="slider" title="slide3" class="slider__nav"/>
+        <input type="radio" name="slider" title="slide4" class="slider__nav"/>
+        <input type="radio" name="slider" title="slide5" class="slider__nav"/>
+        <input type="radio" name="slider" title="slide6" class="slider__nav"/>
+        <div class="slider__inner">
+          <div class="slider__contents">
+            <h2 class="slider__caption">The Colonies</h2>
+            <img class="slider__image" src="../assets/Pictures/Poster.png" alt="logo van het spel" width="210px">
+            <p class="slider__txt">
+              The 4 colonies: The Ants, The Spiders, The Praying Mantis and the Mosquitos fight for the control of New Bug City.
+              <br><br>
+              The colonies recruit other bugs like ladybugs and beetles to help them defeat there enemy.
+            </p>
+          </div>
+          <div class="slider__contents">
+            <h2 class="slider__caption">The Ants</h2>
+            <img  class="slider__image" src="../assets/Pictures/placeholder.png" alt="logo van het spel" width="300px">
+            <p class="slider__txt">The Ants are the citizens of New Bug City and want to start a revolution
+              <br><br>
+              They are done with the government underpaying them and want to take control and make a new authority </p>
+          </div>
+          <div class="slider__contents">
+            <h2 class="slider__caption">The Spiders</h2>
+            <img  class="slider__image" src="../assets/Pictures/placeholder.png" alt="logo van het spel" width="300px">
+            <p class="slider__txt">
+              The Spiders are the mafia of New Bug City and the saw the recent revolution of the ants as an opportunity to take control of the city
+              <br><br>
+              By using there existing power they can over power the other colonies with ease.
+            </p>
+          </div>
+          <div class="slider__contents">
+            <h2 class="slider__caption">The Praying Mantis</h2>
+            <img  class="slider__image" src="../assets/Pictures/placeholder.png" alt="logo van het spel" width="300px">
+            <p class="slider__txt" >
+              The Praying Mantis are the mercenaries of New Bug City they are sick of being ignored and are taking matters into their own hands
+              <br><br>
+              They want to control the economy of the city and execute anyone who doesn't obey their laws.
+            </p>
+          </div>
+          <div class="slider__contents">
+            <h2 class="slider__caption ">The Mosquitos</h2>
+            <img  class="slider__image" src="../assets/Pictures/placeholder.png" alt="logo van het spel" width="300px">
+            <p class="slider__txt">
+              The Mosquitos are the police of New Bug City and are the defenders of the government and want to keep everything the same
+              <br><br>
+              They will use any means necessary to keep the city under control.
+            </p>
+          </div>
+          <div class="slider__contents">
+            <h2 class="slider__caption">Trailer</h2>
+            <iframe class="video"
+
+                    src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+            </iframe>
+            <br><br><br>
+          </div>
+        </div>
       </div>
     </div>
   </div>
   </div>
 </main>
+
