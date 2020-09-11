@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { LandingComponent } from './landing/landing.component';
 import { DamageCalcComponent } from './damage-calc/damage-calc.component';
+import { RulesComponent } from './rules/rules.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AboutUsComponent,
     LandingComponent,
-    DamageCalcComponent
+    DamageCalcComponent,
+    RulesComponent
   ],
   imports: [
     BrowserModule,
