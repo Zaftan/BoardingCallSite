@@ -88,7 +88,7 @@ export class DamageCalcComponent implements OnInit {
     } else if (weapons == 2 && distance >= 1 && distance <= 4) {
       // Handgun
       this.basedamage = 2;
-    } else if (weapons == 3 && distance >= 1 && distance <= 6) {
+    } else if (weapons == 3 && distance >= 2 && distance <= 6) {
       // Bowsect
       this.basedamage = 3;
     } else if (weapons == 4 && distance >= 4 && distance <= 7) {

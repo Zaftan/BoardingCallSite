@@ -240,12 +240,15 @@ input[type=text] {
   align-items: center;
 }
 
+.box.calc{
+  display: flex;
+}
+
 .card {
   margin: 30px;
   padding: 20px;
   max-width: 960px;
   max-height: 700px;
-  display: grid;
   text-align: center;
   color: #3a3a3a;
 }
@@ -255,9 +258,11 @@ input[type=text] {
   color: #3a3a3a;
 }
 
-.aboutusbg {
+.bg {
   background-image: url("assets/Pictures/background.jpg");
+  background-size: contain;
   object-fit: cover;
+  background-attachment: fixed;
 }
 
 .transparentCard {
