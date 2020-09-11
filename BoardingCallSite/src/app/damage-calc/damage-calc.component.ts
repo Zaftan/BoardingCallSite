@@ -86,7 +86,7 @@ export class DamageCalcComponent implements OnInit {
       // Bucksect
       this.basedamage = 5;
     } else if (weapons == 2 && distance >= 1 && distance <= 4) {
-      // Handgun
+      // Footsect
       this.basedamage = 2;
     } else if (weapons == 3 && distance >= 2 && distance <= 6) {
       // Bowsect
